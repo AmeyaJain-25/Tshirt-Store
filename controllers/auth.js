@@ -69,7 +69,7 @@ exports.signin = (req, res) => {
     //If user puts some email such as ameya.com, which is error, it will show error.
     //If user puts ab2abc.com, but its not registered, then we use if user is null or user is not there, then give error.
     if (err || !user) {
-      res.status(400).json({
+      return res.status(400).json({
         error: "USER Email Doesn't Exist",
       });
     }
