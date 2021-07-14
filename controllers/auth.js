@@ -20,7 +20,6 @@ exports.signup = (req, res) => {
       error: errors.array()[0].msg,
     });
   }
-  //  console.log(req.body); //req.body is coming from bodyParser.json //req.body returns the json object which the request or post request sends.
 
   //Creating object named user from class User i.e userSchema and we can save the information.
   //The req.body in the object user is the json data stored in it

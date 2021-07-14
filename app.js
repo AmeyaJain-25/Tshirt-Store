@@ -18,7 +18,7 @@ const orderRoutes = require("./routes/order.js");
 //MIDDLEWARES
 
 //app.use helps to use those as a middleware
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 
